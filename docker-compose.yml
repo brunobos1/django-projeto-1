@@ -1,0 +1,47 @@
+version: "3.9"
+services:
+  backend:
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    container_name: backend
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+    ports:
+      - 8000:8000
+    env_file:
+      - .env
+    depends_on:
+      - mysql-db
+
+  mysql-db:
+    image: mysql
+    container_name: mysql_container
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: bruno741123
+      MYSQL_DATABASE: sistema_login
+    ports:
+      - 3308:3308
+    volumes:
+      - db_data:/var/lib/mysql
+    cap_add:
+      - SYS_NICE
+  
+  adminer:
+    image: adminer
+    container_name: adminer_container
+    restart: always
+    ports:
+      - 8080:8080
+
+  frontend:
+    container_name: frontend
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+
+volumes:
+  db_data:
