@@ -52,12 +52,7 @@ export default function Login() {
             <div class="form-container sign-in-container">
             <form>
                 <h1>Login</h1>
-                <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <span>ou use sua conta</span>
+                
                 <label>
                     <input type="text" placeholder="Email/CPF/PIS" onChange={(e) => setUsername(e.target.value)}/>
                     <input type="password" placeholder="Senha" onChange={(e) => setPassword(e.target.value)}/>
