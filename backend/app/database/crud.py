@@ -1,4 +1,4 @@
-from app.schemas import Alterar_BD, User_BD
+from ..schemas import Alterar_BD, User_BD
 from .model import Usuarios, Enderecos, session
 
 class BD:
