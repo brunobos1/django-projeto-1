@@ -19,7 +19,7 @@
     "react-scripts": "5.0.1",
     "universal-cookie": "^4.0.4",
     "web-vitals": "^2.1.4",
-    "proxy": "https://app1-loginsystem.herokuapp.com/"
+    "proxy": "https://app1-login-api.herokuapp.com/"
   },
   "scripts": {
     "start": "react-scripts start",

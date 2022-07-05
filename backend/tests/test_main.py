@@ -2,7 +2,7 @@ from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from app.database.model import Base, session
-from main import app, verify_password
+from backend.main import app, verify_password
 from app.auth.auth_handler import signJWT
 
 DATABASE_URL = 'sqlite:///./test.db'
