@@ -15,7 +15,7 @@ app = FastAPI(title='Sistema de cadastro/login')
 origins = {
     "http://localhost",
     "http://localhost:3000",
-    "http://localhost:3000/signup",
+    "https://my-firebase-app.web.app"
 }
 
 app.add_middleware(
