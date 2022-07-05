@@ -8,7 +8,7 @@ import Cookies from 'universal-cookie';
 export const cookies = new Cookies();
 
 export const api = axios.create({
-    baseURL: 'https://app1-loginsystem.herokuapp.com/'
+    baseURL: 'https://app1-login-api.herokuapp.com/'
 })
 
 export default function Login() {

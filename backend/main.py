@@ -1,12 +1,12 @@
 from fastapi import FastAPI, Body, Depends
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-from backend.app.schemas import AlterarUser, User, UserLoginSchema
-from backend.app.auth.auth_bearer import JWTBearer
-from backend.app.auth.auth_handler import signJWT
+from app.schemas import AlterarUser, User, UserLoginSchema
+from app.auth.auth_bearer import JWTBearer
+from app.auth.auth_handler import signJWT
 from passlib.context import CryptContext
-from backend.app.valida_cpf import valida_cpf
-from backend.app.database import crud
+from app.valida_cpf import valida_cpf
+from app.database import crud
 
 ##################### Variaveis Globais #####################
 
