@@ -4,8 +4,6 @@ O Sistema foi desenvolvido com FastAPI, React e SQLALchemy para manusear banco d
 
 ## Deploy
 
-Banco de dados no AWS RDS: database-2.coarjxirjuvt.sa-east-1.rds.amazonaws.com
-
 API no Heroku: https://app1-login-api.herokuapp.com/
 
 Portal no Firebase: https://aplicacao-1-login.web.app/
